@@ -1,0 +1,310 @@
+body {
+    background-image: url(/IMG/NAV/NAV2.jpg);
+    backdrop-filter: blur(20px); /* Fondo desenfocado */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    font-family: 'Kanit', sans-serif; /* Usamos la fuente importada */
+    margin: 0; /* Quitamos márgenes predeterminados */
+    padding: 0; /* Quitamos padding predeterminado */
+}
+a{
+    text-decoration: none;
+}
+
+/* Estilos para el menú de navegación */
+nav {
+    padding: 10px 20px; /* Espacio interno alrededor del contenido */
+    display: flex; /* Usamos flexbox para organizar los elementos */
+    justify-content: space-between; /* Espaciamos los elementos a los lados */
+    align-items: center; /* Centramos verticalmente los elementos */
+    position: sticky; /* Hacemos que el menú se quede fijo al hacer scroll */
+    top: 0; /* Posicionamos el menú en la parte superior */
+    z-index: 1000; /* Aseguramos que el menú esté por encima de otros elementos */
+}
+
+.container{
+    color: white;
+    padding: 20px; /* Espacio interno */
+    background-color: #0000009a; /* Color de fondo claro */
+    text-align:center; /* Centramos el contenido */
+    margin-top: 40px; /* Espacio superior antes del pie de página */
+
+    display: flex; /* Usamos flexbox */
+    flex-direction: column; /* Alineamos los elementos en columna */
+    align-items: center; /* Centramos los elementos horizontalmente */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+}
+
+/* Estilos para el logo y el título en el menú */
+.nav_home {
+    display: flex; /* Usamos flexbox */
+    align-items: center; /* Centramos verticalmente */
+}
+
+.logo {
+    max-width: 50px; /* Tamaño máximo del logo */
+    margin-left: 30px;
+    margin-right: 10px; /* Espacio entre el logo y el título */
+}
+
+.title {
+    color: rgb(255, 152, 183); /* Color del texto en blanco */
+    font-size: 20px; /* Tamaño del texto */
+    margin: 0; /* Quitamos márgenes */
+}
+
+.slogan{
+    flex-direction: column; /* Alineamos los elementos en columna */
+    color: rgb(255, 255, 255); /* Color del texto en blanco */
+    font-size: 20px; /* Tamaño del texto */
+    margin: 0; /* Quitamos márgenes */
+    text-align: center;
+    font-weight: bold; /* Poner el texto en negrita */
+
+    text-shadow: 
+        2px 2px 0px #ffffff1e, /* Borde en la parte inferior derecha */
+        -2px -2px 0px #ffffff1e, /* Borde en la parte superior izquierda */
+        -2px 2px 0px #ffffff1e, /* Borde en la parte inferior izquierda */
+        2px -2px 0px #ffffff1e, /* Borde en la parte superior derecha */
+        2px 0px 0px #ffffff1e, /* Borde en la derecha */
+        -2px 0px 0px #ffffff1e, /* Borde en la izquierda */
+        0px 2px 0px #ffffff1e, /* Borde en la parte inferior */
+        0px -2px 0px #ffffff1e; /* Borde en la parte superior */
+
+}
+
+/* Estilos para los iconos en el menú */
+.icons a {
+    margin-left: 15px; /* Espacio entre los iconos */
+    margin-right: 10px;
+    color: white;
+}
+
+/* Estilos para el carrusel */
+.carousel {
+    margin-top: 20px; /* Espacio superior antes del carrusel */
+}
+
+.carousel-item img {
+    height: 800px; /* Altura fija de las imágenes */
+    object-fit:contain;
+}
+
+/* Estilos para el subtítulo en el contenido principal */
+.main_subtitle {
+    text-align: center; /* Centramos el texto */
+    margin-top: 150px; /* Espacio superior */
+
+    color: rgb(255, 255, 255); /* Color del texto en blanco */
+    font-size: 20px; /* Tamaño del texto */
+    
+    text-decoration: underline;
+    font-weight: bold; /* Poner el texto en negrita */
+
+    text-shadow: 
+        2px 2px 0px #ffffff1e, /* Borde en la parte inferior derecha */
+        -2px -2px 0px #ffffff1e, /* Borde en la parte superior izquierda */
+        -2px 2px 0px #ffffff1e, /* Borde en la parte inferior izquierda */
+        2px -2px 0px #ffffff1e, /* Borde en la parte superior derecha */
+        2px 0px 0px #ffffff1e, /* Borde en la derecha */
+        -2px 0px 0px #ffffff1e, /* Borde en la izquierda */
+        0px 2px 0px #ffffff1e, /* Borde en la parte inferior */
+        0px -2px 0px #ffffff1e; /* Borde en la parte superior */
+}
+
+/* Estilos para las tarjetas de productos */
+.main_cards {
+    display: flex; /* Usamos flexbox */
+    justify-content: space-around; /* Espaciamos las tarjetas uniformemente */
+    flex-wrap: wrap; /* Permitimos que las tarjetas pasen a la siguiente línea si es necesario */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.card {
+    margin: 90px; /* Espacio alrededor de cada tarjeta */
+    
+}
+
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container_review{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 10px;
+    grid-auto-flow:row;
+}
+
+.card_review{
+    background-color: rgba(0, 0, 0, 0.301);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.shop_cards{
+    display: flex; /* Usamos flexbox */
+    justify-content: space-between; /* Espaciamos las tarjetas uniformemente */
+    flex-wrap: wrap; /* Permitimos que las tarjetas pasen a la siguiente línea si es necesario */
+    margin-top: 20px; /* Espacio superior */
+    align-content: center;
+}
+
+
+
+/* Estilos para el pie de página */
+footer {
+    color: white;
+    padding: 10px; /* Espacio interno */
+    background-color: #0000009a; /* Color de fondo claro */
+    text-align:center; /* Centramos el contenido */
+    margin-top: 40px; /* Espacio superior antes del pie de página */
+
+    display: flex; /* Usamos flexbox */
+    flex-direction: column; /* Alineamos los elementos en columna */
+    align-items: center; /* Centramos los elementos horizontalmente */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+    border-style:solid;
+    border-color: #ffffff;
+    border-width: 1px;
+}
+
+footer a {
+    text-decoration: none; /* Quitamos el subrayado de los enlaces */
+    color: #007bff; /* Color azul para el enlace */
+    font-size: 18px; /* Tamaño del texto */
+}
+
+footer form {
+    margin-top: 20px; /* Espacio superior antes del formulario */
+
+    display: flex; /* Usamos flexbox */
+    flex-direction: column; /* Alineamos los elementos en columna */
+    align-items: center; /* Centramos los elementos horizontalmente */
+
+    
+    width: 100%; /* Aseguramos que el formulario ocupe el 100% del ancho del footer */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+}
+
+footer form h1 {
+    font-size: 20px; /* Tamaño del título del formulario */
+}
+
+footer input, footer textarea {
+    display: flex;
+    width: 90%; /* Campos ocupan todo el ancho disponible */
+    padding: 10px; /* Espacio interno en los campos */
+    margin-bottom: 40px; /* Espacio inferior entre los campos */
+    border: 1px solid #ced4da; /* Borde gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+}
+
+footer label {
+    font-size: 18px; /* Tamaño del texto de los labels */
+    margin-bottom: 10px; /* Espacio inferior después del label */
+}
+
+footer button {
+    padding: 10px 20px; /* Espacio interno del botón */
+    background-color: #00000093; /* Color de fondo azul */
+    color: white; /* Color del texto en blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 18px; /* Tamaño del texto */
+}
+
+footer button:hover {
+    background-color: #ffffff3b; /* Color más oscuro al pasar el mouse*/
+}
+
+
+/* Estilos para las imágenes de redes sociales */
+footer .SMedia {
+    align-items: center; /* Centramos verticalmente */
+    width: 4%; /* Ancho de los iconos */
+    margin: 1%; /* Espacio alrededor de cada icono */
+}
+
+footer .frase{
+    font-weight:lighter;
+    font-style: italic;
+}
+
+/* Media Queries para pantallas medianas (tablets) */
+
+
+@media (max-width: 768px) {
+    footer input, footer textarea {
+        width: 90vw; /* Ajuste relativo al ancho de la ventana para pantallas pequeñas */
+    }
+}
+
+
+@media (max-width: 768px) {
+    /* Ajustamos el tamaño del logo */
+    .logo {
+        max-width: 60px;
+    }
+    /* Las tarjetas se apilan verticalmente */
+    .main_cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Ajustamos el ancho de las tarjetas */
+    .card {
+        width: 80%; /* Las tarjetas ocupan el 80% del ancho */
+    }
+    /* Ajustamos la altura de las imágenes del carrusel */
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .container_review {
+        grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    }
+
+}
+
+/* Media Queries para pantallas pequeñas (celulares) */
+@media (max-width: 480px) {
+    /* Ajustamos el tamaño del logo */
+    .logo {
+        max-width: 50px;
+    }
+    /* Ajustamos el ancho de las tarjetas */
+    .card {
+        width: 90%; /* Las tarjetas ocupan el 90% del ancho */
+    }
+    /* Ajustamos la altura de las imágenes del carrusel */
+    .carousel-item img {
+        height: 200px;
+    }
+    /* Ajustamos el tamaño del título */
+    .title {
+        font-size: 20px;
+    }
+    /* Ajustamos los títulos en el pie de página */
+    footer form h1, footer h1 {
+        font-size: 20px;
+    }
+    /* Ajustamos el tamaño del enlace en el pie de página */
+    footer a {
+        font-size: 16px;
+    }
+}
